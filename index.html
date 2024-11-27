@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia de Hugo Tenório Nogueira Gomes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="hugogomes.jpg" alt="Foto de Hugo Tenório Nogueira Gomes">
+        <h1>Hugo Tenório Nogueira Gomes</h1>
+        <p>Estudante de Ciência da Computação na Cesar School</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Sobre mim</h2>
+        <div class="content-container">
+            <article class="content-block">
+                <h3>Minha Trajetória até a CESAR School</h3>
+                <p>Originalmente sou de Maceió, vim a Recife em busca de um desafio acadêmico após não me encontrar em Maceió.</p>
+            </article>
+
+            <article class="content-block">
+                <h3>Minha Formação Acadêmica</h3>
+                <p>Atualmente, estou cursando Ciência da Computação na Cesar School, onde estou aprendendo sobre tecnologias inovadoras e desenvolvendo habilidades que me ajudarão na minha futura carreira profissional.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Botão para digitar uma mensagem -->
+    <button onclick="mostrarMensagem()">Clique para digitar uma mensagem</button>
+    
+    <!-- Área onde a mensagem será exibida -->
+    <div id="mensagemContainer"></div>
+
+    <script>
+        function mostrarMensagem() {
+            let mensagem = prompt("Digite uma mensagem:");
+            
+            if (mensagem) {
+                document.getElementById("mensagemContainer").innerHTML = `<p>${mensagem}</p>`;
+            } else {
+                document.getElementById("mensagemContainer").innerHTML = `<p>Nenhuma mensagem digitada.</p>`;
+            }
+        }
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
